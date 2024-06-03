@@ -7,7 +7,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class SampleController {
 
     @GetMapping("/")
-    public String sample() {
+    public String sample() throws InterruptedException {
+        Thread.sleep(1000);
         return "success";
     }
 
