@@ -8,7 +8,7 @@ public class SampleController {
 
     @GetMapping("/")
     public String sample() throws InterruptedException {
-        Thread.sleep(1000);
+        Thread.sleep(10000);
         return "success";
     }
 
